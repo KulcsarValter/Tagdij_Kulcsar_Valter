@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Zen+Loop&display=swap');
+body {
+  font-family: 'Zen Loop', cursive;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #060c21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+.flexbox-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  margin: 10px;
+  background-color: #060c21;
+  min-height: 400px;
+  width: 500px;
+}
+
+.flexbox-container:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+.flexbox-container:before,
+.flexbox-container:after {
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+.flexbox-container:hover{
+  color: black;
+  background: #00505a;
+  box-shadow: 0 0 5px #00505a,
+      0 0 20px #00505a;
+  transition: all 1s;
+}
+
+
+select {
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 50vh;
+  height: 3vh;
+  max-width: 100%;
+  cursor: pointer;
+  padding: 1px 25px;
+}
+
+select:hover {
+  color: black;
+  font-size: 1.6vh;
+  background: #00e1ff;
+  box-shadow: 0 0 5px #00e1ff,
+      0 0 20px #00e1ff,
+      0 0 60px #00e1ff,
+      0 0 120px #00e1ff;
+  transition: all .5s;
+}
+
+input {
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  height: 3vh;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  width: 50vh;
+  cursor: pointer;
+}
+
+input:hover {
+  color: black;
+  font-size: 1.6vh;
+  background: #00e1ff;
+  box-shadow: 0 0 5px #00e1ff,
+      0 0 20px #00e1ff,
+      0 0 60px #00e1ff,
+      0 0 120px #00e1ff;
+  transition: all .5s;
+}
+
+button{
+  border: none;
+  width: 50vh;
+  height: 3vh;
+  border-radius: 4px;
+}
+
+button:hover {
+  color: black;
+  font-size: 1.6vh;
+  background: #00e1ff;
+  box-shadow: 0 0 5px #00e1ff,
+      0 0 20px #00e1ff,
+      0 0 60px #00e1ff,
+      0 0 120px #00e1ff;
+  transition: all .5s;
+}
